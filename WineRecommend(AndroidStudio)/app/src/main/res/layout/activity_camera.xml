@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:weightSum="10"
+
+    tools:context="com.example.diego.winerecommend.CameraActivity">
+
+
+    <ImageView
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="top|bottom|center" />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:onClick="openCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Intentar de nuevo"
+            android:id="@+id/tryAnother" />
+
+        <Button
+            android:onClick="sendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Analizar Menu"
+            android:id="@+id/analyze" />
+    </LinearLayout>
+</LinearLayout>
